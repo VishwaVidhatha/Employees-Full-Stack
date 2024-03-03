@@ -1,0 +1,65 @@
+
+CREATE TABLE employees (
+    sno SERIAL PRIMARY KEY,
+    customer_name VARCHAR(100),
+    age INT,
+    phone VARCHAR(15),
+    location VARCHAR(100),
+    created_at TIMESTAMP
+);
+
+INSERT INTO employees (customer_name, age, phone, location, created_at) VALUES
+    ('Rajesh Sharma', 30, '9876543210', 'Mumbai', NOW() - INTERVAL '10 days' - INTERVAL '5 hours'),
+    ('Anjali Patel', 25, '8765432109', 'Delhi', NOW() - INTERVAL '15 days' - INTERVAL '3 hours'),
+    ('Amit Kumar', 35, '7654321098', 'Bangalore', NOW() - INTERVAL '20 days' - INTERVAL '6 hours'),
+    ('Priya Singh', 28, '6543210987', 'Kolkata', NOW() - INTERVAL '5 days' - INTERVAL '2 hours'),
+    ('Sandeep Verma', 32, '5432109876', 'Chennai', NOW() - INTERVAL '12 days' - INTERVAL '4 hours'),
+    ('Neha Gupta', 29, '4321098765', 'Hyderabad', NOW() - INTERVAL '7 days' - INTERVAL '1 hour'),
+    ('Vikas Reddy', 40, '3210987654', 'Pune', NOW() - INTERVAL '25 days' - INTERVAL '8 hours'),
+    ('Shruti Jain', 27, '2109876543', 'Ahmedabad', NOW() - INTERVAL '18 days' - INTERVAL '7 hours'),
+    ('Rahul Singh', 33, '1098765432', 'Jaipur', NOW() - INTERVAL '14 days' - INTERVAL '2 hours'),
+    ('Pooja Sharma', 31, '9876543210', 'Lucknow', NOW() - INTERVAL '6 days' - INTERVAL '3 hours'),
+    ('Rakesh Patel', 36, '8765432109', 'Kanpur', NOW() - INTERVAL '19 days' - INTERVAL '6 hours'),
+    ('Deepak Kumar', 26, '7654321098', 'Indore', NOW() - INTERVAL '8 days' - INTERVAL '1 hour'),
+    ('Sunita Singh', 34, '6543210987', 'Nagpur', NOW() - INTERVAL '11 days' - INTERVAL '4 hours'),
+    ('Arun Verma', 39, '5432109876', 'Surat', NOW() - INTERVAL '22 days' - INTERVAL '5 hours'),
+    ('Manisha Gupta', 30, '4321098765', 'Chandigarh', NOW() - INTERVAL '9 days' - INTERVAL '2 hours'),
+    ('Prakash Reddy', 41, '3210987654', 'Visakhapatnam', NOW() - INTERVAL '28 days' - INTERVAL '9 hours'),
+    ('Kavita Jain', 28, '2109876543', 'Jaipur', NOW() - INTERVAL '16 days' - INTERVAL '7 hours'),
+    ('Sanjay Kumar', 37, '1098765432', 'Gurgaon', NOW() - INTERVAL '13 days' - INTERVAL '2 hours'),
+    ('Anita Sharma', 32, '9876543210', 'Ahmedabad', NOW() - INTERVAL '4 days' - INTERVAL '3 hours'),
+    ('Vishal Patel', 35, '8765432109', 'Hyderabad', NOW() - INTERVAL '21 days' - INTERVAL '6 hours'),
+    ('Meera Gupta', 29, '7654321098', 'Pune', NOW() - INTERVAL '10 days' - INTERVAL '1 hour'),
+    ('Ravi Verma', 38, '6543210987', 'Noida', NOW() - INTERVAL '17 days' - INTERVAL '4 hours'),
+    ('Neha Singh', 33, '5432109876', 'Chennai', NOW() - INTERVAL '12 days' - INTERVAL '5 hours'),
+    ('Alok Kumar', 27, '4321098765', 'Mumbai', NOW() - INTERVAL '5 days' - INTERVAL '2 hours'),
+    ('Shalini Reddy', 42, '3210987654', 'Kolkata', NOW() - INTERVAL '30 days' - INTERVAL '8 hours'),
+    ('Rajesh Sharma', 31, '2109876543', 'Bangalore', NOW() - INTERVAL '18 days' - INTERVAL '6 hours'),
+    ('Anjali Patel', 36, '1098765432', 'Delhi', NOW() - INTERVAL '14 days' - INTERVAL '2 hours'),
+    ('Amit Kumar', 30, '9876543210', 'Chennai', NOW() - INTERVAL '7 days' - INTERVAL '3 hours'),
+    ('Priya Singh', 34, '8765432109', 'Pune', NOW() - INTERVAL '22 days' - INTERVAL '6 hours'),
+    ('Sandeep Verma', 28, '7654321098', 'Hyderabad', NOW() - INTERVAL '11 days' - INTERVAL '1 hour'),
+    ('Neha Gupta', 37, '6543210987', 'Mumbai', NOW() - INTERVAL '16 days' - INTERVAL '4 hours'),
+    ('Vikas Reddy', 34, '5432109876', 'Bangalore', NOW() - INTERVAL '9 days' - INTERVAL '5 hours'),
+    ('Shruti Jain', 43, '4321098765', 'Delhi', NOW() - INTERVAL '28 days' - INTERVAL '8 hours'),
+    ('Rahul Singh', 32, '3210987654', 'Kolkata', NOW() - INTERVAL '17 days' - INTERVAL '4 hours'),
+    ('Pooja Sharma', 29, '2109876543', 'Chennai', NOW() - INTERVAL '12 days' - INTERVAL '3 hours'),
+    ('Rakesh Patel', 35, '1098765432', 'Pune', NOW() - INTERVAL '20 days' - INTERVAL '6 hours'),
+    ('Deepak Kumar', 31, '9876543210', 'Mumbai', NOW() - INTERVAL '8 days' - INTERVAL '2 hours'),
+    ('Sunita Singh', 29, '8765432109', 'Hyderabad', NOW() - INTERVAL '5 days' - INTERVAL '1 hour'),
+    ('Arun Verma', 44, '7654321098', 'Bangalore', NOW() - INTERVAL '30 days' - INTERVAL '6 hours'),
+    ('Manisha Gupta', 33, '6543210987', 'Delhi', NOW() - INTERVAL '18 days' - INTERVAL '4 hours'),
+    ('Prakash Reddy', 35, '5432109876', 'Kolkata', NOW() - INTERVAL '10 days' - INTERVAL '5 hours'),
+    ('Kavita Jain', 30, '4321098765', 'Chennai', NOW() - INTERVAL '7 days' - INTERVAL '2 hours'),
+    ('Sanjay Kumar', 45, '3210987654', 'Pune', NOW() - INTERVAL '25 days' - INTERVAL '8 hours'),
+    ('Anita Sharma', 32, '2109876543', 'Hyderabad', NOW() - INTERVAL '12 days' - INTERVAL '3 hours'),
+    ('Vishal Patel', 30, '1098765432', 'Mumbai', NOW() - INTERVAL '5 days' - INTERVAL '1 hour'),
+    ('Meera Gupta', 36, '9876543210', 'Bangalore', NOW() - INTERVAL '19 days' - INTERVAL '6 hours'),
+    ('Ravi Verma', 34, '8765432109', 'Delhi', NOW() - INTERVAL '14 days' - INTERVAL '4 hours'),
+    ('Neha Singh', 31, '7654321098', 'Kolkata', NOW() - INTERVAL '11 days' - INTERVAL '3 hours'),
+    ('Alok Kumar', 46, '6543210987', 'Chennai', NOW() - INTERVAL '30 days' - INTERVAL '5 hours');
+
+SELECT * FROM employees;
+
+-- For host and current user address
+SELECT current_user, inet_server_addr();
